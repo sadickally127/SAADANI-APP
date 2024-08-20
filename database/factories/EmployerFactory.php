@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Employer>
  */
-class JobfactoryFactory extends Factory
+class EmployerFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,6 +18,7 @@ class JobfactoryFactory extends Factory
     {
         return [
             //
+            'name' => fake()->company()
         ];
     }
 }
